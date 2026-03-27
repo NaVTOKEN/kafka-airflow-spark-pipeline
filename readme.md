@@ -115,20 +115,17 @@ Streaming analytics using PySpark
 ETL orchestration using Airflow
 Business-driven data engineering
 
-As I have made it flexible to be used with real time data sets and sample trips data ; as the sample dataset has:
+As I have made it flexible to be used with real time data sets and sample trips data both ; as the sample dataset has:
 JSON
 "user_id"
 "timestamp"
 
-But your random producer DOES NOT include them ❌
 
-It can be fixed  by 
-
-"trip_id": random.randint(1000, 9999),
-"user_id": random.randint(1, 10),
-"city": random.choice(cities),
-"fare": random.randint(100, 1000),
-"status": random.choice(["completed", "cancelled"]),
-"timestamp": time.strftime("%Y-%m-%d %H:%M:%S")
-
-you might have to update Spark code to use timestamp accordingly which I have left it to the user. 
+You might have to update Spark code to use timestamp accordingly which I have left it to the user,with mandatory changes as :
+ 1.Schema Update (ADD new fields)
+ 2. Add Timestamp Conversion             (important) 
+ 3. Add Real-Time Demand Logic
+ 4. Add Cancellation Rate Loging\
+ 5. Add Fraud Detection
+ 6. Replace Write Section (IMPORTANT)
+ 7. Replace Termination
