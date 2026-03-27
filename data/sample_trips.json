@@ -1,0 +1,10 @@
+{"trip_id": 1001, "user_id": 1, "city": "Delhi", "fare": 250, "status": "completed", "timestamp": "2024-01-01 10:00:00"}
+{"trip_id": 1002, "user_id": 2, "city": "Mumbai", "fare": 300, "status": "cancelled", "timestamp": "2024-01-01 10:01:00"}
+{"trip_id": 1003, "user_id": 1, "city": "Delhi", "fare": 150, "status": "completed", "timestamp": "2024-01-01 10:02:00"}
+{"trip_id": 1004, "user_id": 3, "city": "Bangalore", "fare": 500, "status": "completed", "timestamp": "2024-01-01 10:03:00"}
+{"trip_id": 1005, "user_id": 4, "city": "Delhi", "fare": 2000, "status": "completed", "timestamp": "2024-01-01 10:04:00"}
+{"trip_id": 1006, "user_id": 5, "city": "Mumbai", "fare": 120, "status": "cancelled", "timestamp": "2024-01-01 10:05:00"}
+{"trip_id": 1007, "user_id": 2, "city": "Mumbai", "fare": 700, "status": "completed", "timestamp": "2024-01-01 10:06:00"}
+{"trip_id": 1008, "user_id": 6, "city": "Bangalore", "fare": 900, "status": "completed", "timestamp": "2024-01-01 10:07:00"}
+{"trip_id": 1009, "user_id": 7, "city": "Delhi", "fare": 3000, "status": "completed", "timestamp": "2024-01-01 10:08:00"}
+{"trip_id": 1010, "user_id": 8, "city": "Mumbai", "fare": 100, "status": "cancelled", "timestamp": "2024-01-01 10:09:00"}
