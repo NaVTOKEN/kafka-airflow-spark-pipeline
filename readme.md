@@ -114,3 +114,21 @@ Real-time data processing with Kafka
 Streaming analytics using PySpark
 ETL orchestration using Airflow
 Business-driven data engineering
+
+As I have made it flexible to be used with real time data sets and sample trips data ; as the sample dataset has:
+JSON
+"user_id"
+"timestamp"
+
+But your random producer DOES NOT include them ❌
+
+It can be fixed  by 
+
+"trip_id": random.randint(1000, 9999),
+"user_id": random.randint(1, 10),
+"city": random.choice(cities),
+"fare": random.randint(100, 1000),
+"status": random.choice(["completed", "cancelled"]),
+"timestamp": time.strftime("%Y-%m-%d %H:%M:%S")
+
+you might have to update Spark code to use timestamp accordingly which I have left it to the user. 
