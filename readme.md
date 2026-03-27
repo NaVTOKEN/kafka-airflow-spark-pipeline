@@ -66,7 +66,7 @@ Inactive = No trips
 Python
 active_users = json_df.select("user_id").distinct()
 
-# If you have full user table:
+
 inactive_users = users_df.join(active_users, "user_id", "left_anti")
 👉 Used for:
 Marketing campaigns
